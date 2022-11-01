@@ -5,6 +5,7 @@ INFO
 
 /*
 380px
+500px
 */
 
 /**********
@@ -13,7 +14,6 @@ GENERAL
 :root {
     --clr-main: #006600;
     --clr-white: #fff;
-    
 }
 
 * {
@@ -56,6 +56,7 @@ img {
 MAIN HEADER
 **********/
 header {
+    position: relative;
     min-height: 15vh;
     background: var(--clr-main);
     color: var(--clr-white);
@@ -63,19 +64,29 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
+    box-shadow: 0 0 10rem var(--clr-main);
+}
+
+.main-header {
+    width: 100%;
 }
 
 /* header mini navigation */
-/* 
+.main-header--btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+.main-header--btn a {
+    color: var(--clr-white);
+}
+
 .main-header--navigation {
-    display: flex;
-    font-size: 1.0rem;
-    font-weight: bold;
-    gap: .3rem;
-    list-style: none;
-    max-width: 400px;
-    justify-content: space-between;
-} */
+    display: none;
+
+} 
 
 
 
@@ -97,6 +108,38 @@ header {
     padding-left: 1rem;
     flex: 1;
     font-size: 1.7rem;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 530px) {
+    .main-header--navigation {
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        gap: 1rem;
+
+        padding: 1rem 0 1.5rem 1rem;
+       /* width: 1200px; */
+       /* gap: 3rem; */
+    }
+    .main-header--navigation li {
+        padding-right: .75rem;
+        border-right: solid 1px var(--clr-white);
+    }
+
+    .main-header--navigation li:last-of-type {
+        border: 0;
+    }
+    .main-header--navigation li a{
+        color: var(--clr-white);
+    }
+
+    .main-header--btn {
+        top: 50%;
+    }
 }
