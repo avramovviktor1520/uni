@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="./list.css">
+</head>
+<body>
+    <main class="wrapper">
+        <h1>To-do List</h1>
+        <div class="main">
+            <div class="main-btns">
+                <a href="#" class="btn btn-add">Add task</a>
+                <a href="#" class="btn btn-error">Delete all</a>
+                <a href="#" class="btn btn-success">Export to pdf</a>
+            </div>
+
+            <div class="main-grid">
+
+                <div class="main-input">
+                    <h2>User input</h2>
+
+                    <div class="input-control">
+                        <h3>Task title</h3>
+                        <input placeholder="Enter title" type="text" class="input-title textfield">
+                    </div>
+
+                    <div class="input-control">
+                        <h3>Enter task description</h3>
+                        <textarea placeholder="Enter some text" class="input-description textfield" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <a href=""  class="btn btn-save-task btn-add">Save</a>
+                </div>
+    
+                <div class="main-tasks">
+                    <div class="tasks-title">
+                        <h2>Task list</h2>
+                    </div>
+
+                    <div class="task-list">
+                        <div class="task">
+                            <div class="task-title">
+                                <div class="task-id">0.</div>
+                                <h2>Clean dishes</h2>
+                            </div>
+
+                            <p class="task-date"></p>
+
+                            <div class="task-description">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia consequatur veritatis error? Aspernatur odit quibusdam consectetur aut eos ipsum expedita possimus culpa delectus? Voluptate, nisi!
+                            </div>
+    
+                            <div class="task-actions">
+                                <a class="btn btn-add" href="">Edit</a>
+                                <a class="btn btn-error" href="">Delete</a>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        const btn = document.querySelector('.btn-error');
+        btn.addEventListener('click', function() {
+            this.classList.toggle('rotate')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3f3f3;
+    padding: 0 4rem;
+}
+
+.wrapper {
+    width: 100%;
+    background: #ebebeb;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+h1::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    background: #e72a11;
+    height: 3px;
+    width: 30px;
+    margin-top: .25rem;
+
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.btn {
+    color: white;
+    padding: .5rem 1rem;
+    background-color: #00b600;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+
+
+.btn-add {
+    background: #3B71CA;
+}
+
+.btn-error {
+    background:#DC4C64;
+    transition: all .3s ease;
+}
+
+.btn-success {
+    background: #14A44D;
+}
+
+
+.main-btns {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+}
+
+.main-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-grid {
+    display: grid;
+    padding: 0 .5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-tasks {
+
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 1.25rem;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.input-control {
+    margin-bottom: 1rem;
+    padding-right:2rem;
+}
+
+.textfield {
+    width: 80%;
+    border: 1px solid rgba(51, 51, 51, 0.31);
+    padding: .475rem .7rem;
+    outline: none;
+    font-size: 1rem;
+    
+    border-radius: 6px;
+}
+
+
+.btn-save-task {
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.task {
+    font-size: .9rem;
+}
+
+.task-title {
+    display: flex;
+    align-items: center;
+    gap: .1rem;
+    margin-bottom: .65rem;
+}
+
+
+
+
+.task-title h2 {
+    font-size: 1rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+.task-description {
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.task-actions 
+.task-actions .btn{
+    font-size: .8rem;
+}
